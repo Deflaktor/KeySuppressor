@@ -1,44 +1,51 @@
 # Key Suppressor
 
-Suppresses a configurable list of keys.
+Suppresses a configurable list of keys to prevent the base game of handling that key event whilst enabling other mods to still handle that event.
 
 ## Motivation
 
-The [Controller mapping](https://stardewcommunitywiki.com/Controls) in Stardew Valley often has multiple keys for the same action defined. For example the XBox Controller has three buttons for opening the menu (Start, Y and B), as well 
+The [Controller mapping](https://stardewcommunitywiki.com/Controls) in Stardew Valley often has multiple keys for the same action defined. For example the XBox Controller has three buttons for opening the menu (Start, Y and B).
 
-This mod aims to free up some of the duplicate keys to be used by other mods.
+This mod aims to free up some of the duplicate keys to be used by other mods, for example:
+- [Billboard Anywhere](https://www.nexusmods.com/stardewvalley/mods/492)
+- [Data Layers](https://www.nexusmods.com/stardewvalley/mods/1691)
+- [Horse Flute Anywhere](https://www.nexusmods.com/stardewvalley/mods/7500)
+- [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541)
+- [Drop It - Drop Item Hotkey](https://www.nexusmods.com/stardewvalley/mods/7971)
+
+It does not always work though with mods which require a button to be held. These mods need to adapt their code to ensure compatibility with this mod.
 
 ## Configuration
 
 Start the game and let the 'config.json' be generated. By default it creates a list you may want to modify:
 
-| Button               | Supressed                  | Note |
+| Button               | Suppress Mode              | Note |
 | -------------------- | -------------------------- | ---- |
-| DPadDown             | Suppress                   |  |
-| DPadLeft             | Suppress                   |  |
-| DPadRight            | Suppress                   |  |
-| DPadUp               | Suppress                   |  |
-| LeftShift            | Suppress                   |  |
+| DPadDown             | Suppress                   |      |
+| DPadLeft             | Suppress                   |      |
+| DPadRight            | Suppress                   |      |
+| DPadUp               | Suppress                   |      |
+| LeftShift            | Suppress                   |      |
 | RightStick           | Suppress                   | Suppressing this button removes the chat functionality. Useful for splitscreen. |
-| ControllerA          | DoNotSuppress              |  |
+| ControllerA          | DoNotSuppress              |      |
 | ControllerB          | SuppressOnlyWhenPlayerFree | Retains the functionality to cancel within menus, but frees it up for when the player is free to act |
-| ControllerX          | DoNotSuppress              |  |
-| ControllerY          | DoNotSuppress              |  |
-| ControllerBack       | DoNotSuppress              |  |
-| ControllerStart      | DoNotSuppress              |  |
-| BigButton            | DoNotSuppress              |  |
-| LeftShoulder         | DoNotSuppress              |  |
-| RightShoulder        | DoNotSuppress              |  |
-| LeftTrigger          | DoNotSuppress              |  |
-| RightTrigger         | DoNotSuppress              |  |
-| LeftThumbstickDown   | DoNotSuppress              |  |
-| LeftThumbstickLeft   | DoNotSuppress              |  |
-| LeftThumbstickRight  | DoNotSuppress              |  |
-| LeftThumbstickUp     | DoNotSuppress              |  |
-| RightThumbstickDown  | DoNotSuppress              |  |
-| RightThumbstickLeft  | DoNotSuppress              |  |
-| RightThumbstickRight | DoNotSuppress              |  |
-| RightThumbstickUp    | DoNotSuppress              |  |
+| ControllerX          | DoNotSuppress              |      |
+| ControllerY          | DoNotSuppress              |      |
+| ControllerBack       | DoNotSuppress              |      |
+| ControllerStart      | DoNotSuppress              |      |
+| BigButton            | DoNotSuppress              |      |
+| LeftShoulder         | DoNotSuppress              |      |
+| RightShoulder        | DoNotSuppress              |      |
+| LeftTrigger          | DoNotSuppress              |      |
+| RightTrigger         | DoNotSuppress              |      |
+| LeftThumbstickDown   | DoNotSuppress              |      |
+| LeftThumbstickLeft   | DoNotSuppress              |      |
+| LeftThumbstickRight  | DoNotSuppress              |      |
+| LeftThumbstickUp     | DoNotSuppress              |      |
+| RightThumbstickDown  | DoNotSuppress              |      |
+| RightThumbstickLeft  | DoNotSuppress              |      |
+| RightThumbstickRight | DoNotSuppress              |      |
+| RightThumbstickUp    | DoNotSuppress              |      |
 
 You can freely extend this list by other keys. See a list of possible keys in the Stardew Wiki page [Key Bindings](https://stardewcommunitywiki.com/Modding:Player_Guide/Key_Bindings)
 
