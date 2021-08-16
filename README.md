@@ -1,12 +1,13 @@
 # Key Suppressor
 
-Suppresses a configurable list of keys to prevent the base game of handling that key event whilst enabling other mods to still handle that event.
+Suppresses a configurable list of keys to prevent the base game from handling that key event whilst enabling other mods to still handle that event.
 
 ## Motivation
 
-The [Controller mapping](https://stardewcommunitywiki.com/Controls) in Stardew Valley often has multiple keys for the same action defined. For example the XBox Controller has three buttons for opening the menu (Start, Y and B).
+The [Controller mapping](https://stardewcommunitywiki.com/Controls) in Stardew Valley often has multiple keys for the same action defined. For example the XBox Controller has three buttons for opening the menu (Start, Y and B). This mod aims to free up some of the duplicate keys to be used by other mods.
+![Controller Scheme](controller.png)
 
-This mod aims to free up some of the duplicate keys to be used by other mods, for example:
+Some example mods which can be used with this mod:
 - [Billboard Anywhere](https://www.nexusmods.com/stardewvalley/mods/492)
 - [Data Layers](https://www.nexusmods.com/stardewvalley/mods/1691)
 - [Horse Flute Anywhere](https://www.nexusmods.com/stardewvalley/mods/7500)
@@ -25,7 +26,7 @@ Start the game and let the 'config.json' be generated. By default it creates a l
 | DPadLeft             | Suppress                   |      |
 | DPadRight            | Suppress                   |      |
 | DPadUp               | Suppress                   |      |
-| LeftShift            | Suppress                   |      |
+| LeftShift            | DoNotSuppress              |      |
 | RightStick           | Suppress                   | Suppressing this button removes the chat functionality. Useful for splitscreen. |
 | ControllerA          | DoNotSuppress              |      |
 | ControllerB          | SuppressOnlyWhenPlayerFree | Retains the functionality to cancel within menus, but frees it up for when the player is free to act |
