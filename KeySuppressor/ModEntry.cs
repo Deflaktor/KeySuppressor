@@ -38,10 +38,16 @@ namespace KeySuppressor
             {
                 foreach (var keyValue in Config.SuppressedKeys)
                 {
-                    if (keyValue.Value)
+                    switch (keyValue.Value)
                     {
-                        this.Helper.Input.SuppressActiveKeybinds(KeybindList.ForSingle(keyValue.Key));
+                        case ModConfig.SuppressMode.SuppressOnlyInMenu when Context.IsWorldReady && Game1.activeClickableMenu != null:
+                        case ModConfig.SuppressMode.SuppressOnlyWhenPlayerFree when Context.IsPlayerFree:
+                        case ModConfig.SuppressMode.SuppressOnlyWhenPlayerCanMove when Context.CanPlayerMove:
+                        case ModConfig.SuppressMode.Suppress:
+                            this.Helper.Input.SuppressActiveKeybinds(KeybindList.ForSingle(keyValue.Key));
+                            break;
                     }
+                    
                 }
             }
         }
