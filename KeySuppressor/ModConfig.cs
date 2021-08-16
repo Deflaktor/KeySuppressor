@@ -28,7 +28,7 @@ namespace KeySuppressor
             defaultSuppressedKeys.Add(SButton.DPadLeft, SuppressMode.Suppress);
             defaultSuppressedKeys.Add(SButton.DPadRight, SuppressMode.Suppress);
             defaultSuppressedKeys.Add(SButton.DPadUp, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.LeftShift, SuppressMode.Suppress);
+            defaultSuppressedKeys.Add(SButton.LeftShift, SuppressMode.DoNotSuppress);
             defaultSuppressedKeys.Add(SButton.RightStick, SuppressMode.Suppress);
             defaultSuppressedKeys.Add(SButton.ControllerA, SuppressMode.DoNotSuppress);
             defaultSuppressedKeys.Add(SButton.ControllerB, SuppressMode.SuppressOnlyWhenPlayerFree);
