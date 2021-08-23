@@ -5,6 +5,7 @@ Suppresses a configurable list of keys to prevent the base game from handling th
 ## Motivation
 
 The [Controller mapping](https://stardewcommunitywiki.com/Controls) in Stardew Valley often has multiple keys for the same action defined. For example the XBox Controller has three buttons for opening the menu (Start, Y and B). This mod aims to free up some of the duplicate keys to be used by other mods.
+
 ![Controller Scheme](controller.png)
 
 Some example mods which can be used with this mod:
