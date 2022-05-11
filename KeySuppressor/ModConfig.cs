@@ -1,10 +1,5 @@
 ﻿using StardewModdingAPI;
-using StardewModdingAPI.Utilities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KeySuppressor
 {
@@ -23,32 +18,34 @@ namespace KeySuppressor
 
         private static Dictionary<SButton, SuppressMode> GetDefaultSuppressedKeys()
         {
-            var defaultSuppressedKeys = new Dictionary<SButton, SuppressMode>();
-            defaultSuppressedKeys.Add(SButton.DPadDown, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.DPadLeft, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.DPadRight, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.DPadUp, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.LeftShift, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightStick, SuppressMode.Suppress);
-            defaultSuppressedKeys.Add(SButton.ControllerA, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.ControllerB, SuppressMode.SuppressOnlyWhenPlayerFree);
-            defaultSuppressedKeys.Add(SButton.ControllerX, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.ControllerY, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.ControllerBack, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.ControllerStart, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.BigButton, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftShoulder, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightShoulder, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftTrigger, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightTrigger, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftThumbstickDown, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftThumbstickLeft, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftThumbstickRight, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.LeftThumbstickUp, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightThumbstickDown, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightThumbstickLeft, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightThumbstickRight, SuppressMode.DoNotSuppress);
-            defaultSuppressedKeys.Add(SButton.RightThumbstickUp, SuppressMode.DoNotSuppress);
+            var defaultSuppressedKeys = new Dictionary<SButton, SuppressMode>
+            {
+                { SButton.DPadUp, SuppressMode.DoNotSuppress },
+                { SButton.DPadDown, SuppressMode.DoNotSuppress },
+                { SButton.DPadLeft, SuppressMode.DoNotSuppress },
+                { SButton.DPadRight, SuppressMode.DoNotSuppress },
+                { SButton.ControllerA, SuppressMode.DoNotSuppress },
+                { SButton.ControllerB, SuppressMode.SuppressOnlyWhenPlayerFree },
+                { SButton.ControllerX, SuppressMode.DoNotSuppress },
+                { SButton.ControllerY, SuppressMode.DoNotSuppress },
+                { SButton.LeftStick, SuppressMode.DoNotSuppress },
+                { SButton.LeftThumbstickUp, SuppressMode.DoNotSuppress },
+                { SButton.LeftThumbstickDown, SuppressMode.DoNotSuppress },
+                { SButton.LeftThumbstickLeft, SuppressMode.DoNotSuppress },
+                { SButton.LeftThumbstickRight, SuppressMode.DoNotSuppress },
+                { SButton.RightStick, SuppressMode.Suppress },
+                { SButton.RightThumbstickUp, SuppressMode.DoNotSuppress },
+                { SButton.RightThumbstickDown, SuppressMode.DoNotSuppress },
+                { SButton.RightThumbstickLeft, SuppressMode.DoNotSuppress },
+                { SButton.RightThumbstickRight, SuppressMode.DoNotSuppress },
+                { SButton.LeftShoulder, SuppressMode.DoNotSuppress },
+                { SButton.LeftTrigger, SuppressMode.DoNotSuppress },
+                { SButton.RightShoulder, SuppressMode.DoNotSuppress },
+                { SButton.RightTrigger, SuppressMode.DoNotSuppress },
+                { SButton.ControllerBack, SuppressMode.DoNotSuppress },
+                { SButton.ControllerStart, SuppressMode.DoNotSuppress },
+                { SButton.BigButton, SuppressMode.DoNotSuppress }
+            };
             return defaultSuppressedKeys;
         }
     }
